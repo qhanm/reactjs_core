@@ -6,6 +6,7 @@ import {LoginFormValidationSchema} from "./LoginFormValidation";
 import {connect} from 'react-redux';
 import {Button} from "@material-ui/core";
 import ButtonField from "../../Elements/ButtonField";
+import {signInSagaAction} from "../../../redux/sagas/actions/Auth/UserLoginAction";
 
 function LoginForm(props) {
 
@@ -62,8 +63,8 @@ const LoginFormWithFormik = withFormik({
         remember: false,
     }),
     validationSchema: LoginFormValidationSchema,
-    handleSubmit: (values, { setSubmitting }) => {
-        console.log(values)
+    handleSubmit: (values, {props, setSubmitting }) => {
+        props.dispatch(signInSagaAction(values));
     },
 })(LoginForm)
 

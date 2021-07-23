@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
     "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -17,11 +18,12 @@
     "react-scripts": "4.0.3",
     "react-spring": "^9.2.4",
     "redux": "^4.1.0",
+    "redux-saga": "^1.1.3",
     "web-vitals": "^1.1.2",
     "yup": "^0.32.9"
   },
   "scripts": {
-    "start": "set PORT=6396 && react-scripts --max-http-header-size=777777 start",
+    "start": "set PORT=3000 && react-scripts --max-http-header-size=777777 start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

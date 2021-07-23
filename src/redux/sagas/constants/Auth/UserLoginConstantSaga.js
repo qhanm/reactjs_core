@@ -1,0 +1,1 @@
+export const SAGA_USER_SIGN_IN_API = 'user_sign_in_api'

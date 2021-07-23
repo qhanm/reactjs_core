@@ -28,7 +28,7 @@ function LoginPage(props) {
             <Typography component="h1" variant="h5">
                 Sign in
             </Typography>
-            <LoginForm propFormik={props} />
+            <LoginForm />
             <Grid className={classes.paper}  container>
                 <Grid item xs>
                     <Link href="#" variant="body2">

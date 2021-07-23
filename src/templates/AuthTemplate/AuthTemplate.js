@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom';
 import Footer from './Footer';
 import LeftContent from './LeftContent';
 import Paper from '@material-ui/core/Paper';
-import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';

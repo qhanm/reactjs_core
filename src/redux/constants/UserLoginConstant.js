@@ -1,0 +1,1 @@
+export const SET_USER_LOGIN = 'set_user_login';
