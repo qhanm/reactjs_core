@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/draw-diagram.iml" filepath="$PROJECT_DIR$/.idea/draw-diagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../xampp/htdocs/draw-diagram-api/.idea/draw-diagram-api.iml" filepath="$PROJECT_DIR$/../../../xampp/htdocs/draw-diagram-api/.idea/draw-diagram-api.iml" />
     </modules>
   </component>
 </project>

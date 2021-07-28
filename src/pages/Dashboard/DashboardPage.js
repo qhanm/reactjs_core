@@ -1,95 +1,95 @@
 import React, {Component} from 'react';
-import Breadcrumb from "../../components/Global/Breadcrumb/Breadcrumb";
-import HeaderDashboard from "../../components/Global/Header/HeaderDashboard";
+import {Grid, makeStyles} from "@material-ui/core";
+import Paper from '@material-ui/core/Paper';
+import GroupIcon from '@material-ui/icons/Group';
+import {Color} from "../../templates/DashboardTemplate/Theme";
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+    },
+    paper: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+    },
+    rootBoxPadding: {
+        padding: '80px',
+    }
+}));
+
 
 const DashboardPage = () => {
+    const classes = useStyles();
+
     return (
         <>
-            <div className="header">
-                <Breadcrumb />
-            </div>
-            <HeaderDashboard />
-            <div className="content" style={{display: 'flex'}}>
-                <div className="card" style={{width: '17rem', height: '25rem'}}>
-                    <div className="card-header">
-                        BACKLOG 3
-                    </div>
-                    <ul className="list-group list-group-flush">
-                        <li className="list-group-item" data-toggle="modal" data-target="#infoModal" style={{cursor: 'pointer'}}>
-                            <p>
-                                Each issue has a single reporter but can have multiple
-                                assignees
-                            </p>
-                            <div className="block" style={{display: 'flex'}}>
-                                <div className="block-left">
-                                    <i className="fa fa-bookmark" />
-                                    <i className="fa fa-arrow-up" />
-                                </div>
-                                <div className="block-right">
-                                    <div className="avatar-group" style={{display: 'flex'}}>
-                                        <div className="avatar">
-                                            <img src="./assets/img/download (1).jfif" alt="" />
-                                        </div>
-                                        <div className="avatar">
-                                            <img src="./assets/img/download (2).jfif" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="list-group-item">
-                            <p>
-                                Each issue has a single reporter but can have multiple
-                                assignees
-                            </p>
-                            <div className="block" style={{display: 'flex'}}>
-                                <div className="block-left">
-                                    <i className="fa fa-check-square" />
-                                    <i className="fa fa-arrow-up" />
-                                </div>
-                                <div className="block-right">
-                                    <div className="avatar-group" style={{display: 'flex'}}>
-                                        <div className="avatar">
-                                            <img src="./assets/img/download (1).jfif" alt="" />
-                                        </div>
-                                        <div className="avatar">
-                                            <img src="./assets/img/download (2).jfif" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                </div>
-                <div className="card" style={{width: '17rem', height: '25rem'}}>
-                    <div className="card-header">
-                        SELECTED FOR DEVELOPMENT 2
-                    </div>
-                    <ul className="list-group list-group-flush">
-                        <li className="list-group-item">Cras justo odio</li>
-                        <li className="list-group-item">Dapibus ac facilisis in</li>
-                    </ul>
-                </div>
-                <div className="card" style={{width: '17rem', height: '25rem'}}>
-                    <div className="card-header">
-                        IN PROGRESS 2
-                    </div>
-                    <ul className="list-group list-group-flush">
-                        <li className="list-group-item">Cras justo odio</li>
-                        <li className="list-group-item">Dapibus ac facilisis in</li>
-                    </ul>
-                </div>
-                <div className="card" style={{width: '17rem', height: '25rem'}}>
-                    <div className="card-header">
-                        DONE 3
-                    </div>
-                    <ul className="list-group list-group-flush">
-                        <li className="list-group-item">Cras justo odio</li>
-                        <li className="list-group-item">Dapibus ac facilisis in</li>
-                        <li className="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                </div>
+            <div className={classes.root}>
+                <Grid container spacing={3} style={{padding: 5}}>
+                    <Grid item xs={6} sm={3}>
+                        <Paper className={classes.paper}>
+                            <h2 className={`text-center ${ classes.rootBoxPadding }`}><GroupIcon fontSize="large"/>Users</h2>
+                            <Grid container>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.primary}>Total: 30</h5>
+                                </Grid>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.green}>Active: 20</h5>
+                                </Grid>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.red}>Block: 10</h5>
+                                </Grid>
+                            </Grid>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={6} sm={3}>
+                        <Paper className={classes.paper}>
+                            <h2 className={`text-center ${ classes.rootBoxPadding }`}><GroupIcon fontSize="large"/>Users</h2>
+                            <Grid container>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.primary}>Total: 30</h5>
+                                </Grid>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.green}>Active: 20</h5>
+                                </Grid>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.red}>Block: 10</h5>
+                                </Grid>
+                            </Grid>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={6} sm={3}>
+                        <Paper className={classes.paper}>
+                            <h2 className={`text-center ${ classes.rootBoxPadding }`}><GroupIcon fontSize="large"/>Users</h2>
+                            <Grid container>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.primary}>Total: 30</h5>
+                                </Grid>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.green}>Active: 20</h5>
+                                </Grid>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.red}>Block: 10</h5>
+                                </Grid>
+                            </Grid>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={6} sm={3}>
+                        <Paper className={classes.paper}>
+                            <h2 className={`text-center ${ classes.rootBoxPadding }`}><GroupIcon fontSize="large"/>Users</h2>
+                            <Grid container>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.primary}>Total: 30</h5>
+                                </Grid>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.green}>Active: 20</h5>
+                                </Grid>
+                                <Grid item xs className="text-center">
+                                    <h5 style={Color.red}>Block: 10</h5>
+                                </Grid>
+                            </Grid>
+                        </Paper>
+                    </Grid>
+                </Grid>
             </div>
         </>
     );

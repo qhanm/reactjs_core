@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="65f9c888-011d-4b93-95f6-81b901b7d2c6" name="157.230.243.114">
+        <fileTransfer rootFolder="/var/www/html/reactjs_core/" accessType="SFTP" host="157.230.243.114" port="22" sshConfigId="76e2e04e-bdcf-4a0d-ad36-e633147fddc8" sshConfig="root@157.230.243.114:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="1dc2935d-ffce-41c7-9b51-03761a5d51e4" name="root-api">
+        <fileTransfer rootFolder="/var/www/html/root-app/" accessType="SFTP" host="157.230.243.114" port="22" sshConfigId="76e2e04e-bdcf-4a0d-ad36-e633147fddc8" sshConfig="root@157.230.243.114:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

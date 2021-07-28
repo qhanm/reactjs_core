@@ -13,13 +13,14 @@ const ButtonField = (props) => {
         type,
         color,
         isFullWidth,
-        text
+        text,
+        className
     } = props
 
     return (
         <>
             <Button
-                className={classes.btn}
+                className={`${classes.btn} ${className}`}
                 type={ type ? type : 'button' }
                 fullWidth={ isFullWidth }
                 variant="contained"
